@@ -58,7 +58,7 @@ input [type="checkbox"].visually-hidden {
     font-size: 30px;
     line-height: 32px;
     color: #515151;
-    letter-spacing: -0.02em;
+    letter-spacing: -1px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -80,9 +80,9 @@ input [type="checkbox"].visually-hidden {
     list-style: none;
 }
 
-.header-item:not(:last-child) {
+/* .header-item:not(:last-child) {
     margin-right: 35px;
-}
+} */
 
 .header-link {
     font-family: "Open Sans", "Arial", "Tahoma", sans-serif;
@@ -90,9 +90,10 @@ input [type="checkbox"].visually-hidden {
     line-height: 11px;
     font-weight: bold;
     color: #0f0101;
-    letter-spacing: -0.02em;
+    letter-spacing: -1px;
     text-decoration: none;
     text-transform: uppercase;
+    padding:0 18px 0 18px;
 }
 
 .header-link:hover,
@@ -111,7 +112,7 @@ input [type="checkbox"].visually-hidden {
 .slider {
     background-image: url(img/slide4.jpg);
     height: 600px;
-    margin-bottom: 108px;
+    /* margin-bottom: 108px; */
 }
 
 .slider__button__cont {
@@ -136,7 +137,7 @@ input [type="checkbox"].visually-hidden {
     font-size: 60px;
     font-weight: bold;
     line-height: 82px;
-    letter-spacing: -0.02em;
+    letter-spacing: -1px;
     text-transform: uppercase;
     color: #fff;
 }
@@ -146,7 +147,7 @@ input [type="checkbox"].visually-hidden {
     font-size: 24px;
     font-weight: 300;
     line-height: 54px;
-    letter-spacing: -0.02em;
+    letter-spacing: -1px;
     text-transform: uppercase;
     color: #fff;
 }
@@ -186,7 +187,7 @@ input [type="checkbox"].visually-hidden {
 /*Featured products section*/
 
 .featured-products {
-    padding-bottom: 114px;
+    padding: 100px 0 114px 0;
 }
 
 .featured-products-title {
@@ -196,7 +197,7 @@ input [type="checkbox"].visually-hidden {
     font-size: 48px;
     font-weight: bold;
     line-height: 32px;
-    letter-spacing: -0.02em;
+    letter-spacing: -1px;
     text-transform: uppercase;
     color: #515151;
 }
@@ -303,7 +304,7 @@ margin-bottom: 7px;
     line-height: 32px;
     font-weight: normal;
     color: #fff;
-    letter-spacing: -0.02em;
+    letter-spacing: -1px;
     text-transform: uppercase;
     background-image: url(img/icon_cart.png);
     background-position: 7% 50%;
@@ -316,7 +317,7 @@ margin-bottom: 7px;
     font-size: 18px;
     font-weight: bold;
     line-height: 40px;
-    letter-spacing: -0.02em;
+    letter-spacing: -1px;
     text-transform: uppercase;
     color: #fff;
     background-color: #0f0101;
@@ -357,7 +358,7 @@ margin-bottom: 7px;
     line-height: 72px;
     font-weight: bold;
     color: #fff;
-    letter-spacing: -0.02em;
+    letter-spacing: -1px;
 }
 
 .last__child {
