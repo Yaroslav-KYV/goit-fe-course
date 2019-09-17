@@ -1,0 +1,306 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+
+/* Font-face */
+
+/* montserrat-regular - cyrillic_latin */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('./fonts/montserrat-v14-cyrillic_latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/montserrat-v14-cyrillic_latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - cyrillic_latin */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('./fonts/montserrat-v14-cyrillic_latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/montserrat-v14-cyrillic_latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin */
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+        url('./fonts/roboto-slab-v9-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/roboto-slab-v9-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Wisdom-Script-Regular */
+
+@font-face {
+    font-family: 'Wisdom Script Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Wisdom Script Regular'), url('./fonts/Wisdom\ Script\ AJ.woff') format('woff');
+}
+
+/* PT-serif-italic - latin similary to Droid Serif */
+
+@font-face {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: local('PT Serif Italic'), local('PTSerif-Italic'),
+        url('./fonts/pt-serif-v11-latin-italic.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/pt-serif-v11-latin-italic.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/*Visually hidden*/
+
+.visually-hidden:not(:focus):not(:active),
+input [type="checkbox"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Header */
+
+.navigation__cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+
+}
+
+.site__logo {
+    font-family: 'Wisdom Script Regular';
+    font-size: 1.625rem;
+    /* line-height: 2.5625rem; */
+    text-decoration: none;
+    color: #fed136;
+}
+
+.navigation__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 51.59%;
+    align-items: flex-end;
+    list-style: none;
+}
+
+.navigation__item a {
+    font-family: 'Montserrat', 'Arial', 'Tahoma', sans-serif;
+    font-size: 0.875rem;
+    /* line-height: 2.5625rem; */
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.navigation__item a:hover,
+.navigation__item a:focus {
+    color: #fed136;
+}
+
+/* Services section */
+
+.services__cont {
+    padding: 6rem 0 7.375rem 0;
+}
+
+.section__head {
+    font-family: 'Montserrat', 'Arial', 'Tahoma', sans-serif;
+    font-size: 2.5rem;
+    line-height: 4.6875rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.section__title {
+    margin-bottom: 9.5rem;
+    font-family: 'PT serif', 'Arial', 'Tahoma', serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #777;
+}
+
+.services__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__item {
+    position: relative;
+    width: 30.85%;
+    list-style: none;
+    text-align: center;
+}
+
+.first::before,
+.second::before,
+.third::before {
+    position: absolute;
+    display: block;
+    top: -4.625rem;
+    left: 50%;
+    width: 4.625rem;
+    height: 4.5625rem;
+    transform: translateX(-50%);
+    content: '';
+}
+
+.first::before {
+    background-image: url(./img/bascket.png);
+}
+
+.second::before {
+
+    background-image: url(./img/laptop.png);
+}
+
+.third::before {
+
+    background-image: url(./img/lock.png);
+}
+
+.services__item__head {
+    font-family: 'Montserrat', 'Arial', 'Tahoma', sans-serif;
+    font-size: 1.125rem;
+    line-height: 4rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.services__item__text {
+    font-family: 'Roboto Slab';
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+    color: #777;
+
+}
+
+/* Footer */
+
+/* background-image cъезжает 
+при разрешении меньше 940px ??? */
+.footer__container {
+    padding: 5.75rem 0 7rem 0;
+    background-image: url(./img/Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact__head {
+    color: #fff;
+}
+
+/* Feedback form*/
+
+/* Form style */
+
+/* form не responsive ??? */
+.form__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__item {
+    margin-bottom: 1.75rem;
+    width: 28.5625rem;
+    height: 3.25rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.125rem;
+}
+
+.form__item:focus:invalid {
+    border: 0.2rem solid red;
+    outline: none;
+    border-radius: 0.125rem;
+}
+
+.form__item:focus:valid {
+    border: 0.2rem solid greenyellow;
+    outline: none;
+    border-radius: 0.125rem;
+}
+
+.message {
+    height: 13.1875rem;
+}
+
+::placeholder {
+    padding: 1rem 0 0 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #bbbbbb;
+}
+
+:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.send__button {
+    display: block;
+    margin: 0 auto;
+    width: 14.9375rem;
+    height: 4.125rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    background-color: #fed136;
+    cursor: pointer;
+
+}
