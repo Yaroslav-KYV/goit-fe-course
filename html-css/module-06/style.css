@@ -224,6 +224,10 @@ input [type="checkbox"].visually-hidden {
     padding: 96px 0 80px 0;
 }
 
+.team__item__image {
+    margin-bottom: 30px;
+}
+
 .team__text {
     margin-bottom: 90px;
     text-align: center;
@@ -320,7 +324,7 @@ input [type="checkbox"].visually-hidden {
 /* Button style end */
 
 .name__caption {
-    padding-top: 30px;
+    margin-bottom: 10px;
     font-family: 'Montserrat', 'Arial', 'Tahoma', sans-serif;
     font-size: 14px;
     line-height: 16px;
@@ -331,7 +335,6 @@ input [type="checkbox"].visually-hidden {
 }
 
 .position__caption {
-    padding-top: 10px;
     font-style: italic;
     font-weight: 300;
     cursor: pointer;
@@ -342,12 +345,12 @@ input [type="checkbox"].visually-hidden {
 .page__footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 0 10px 0;
     border-top: 1px solid #e5e5e5;
 }
 
 .legal__info {
-    padding-top: 10px;
     font-family: 'Montserrat', 'Arial', 'Tahoma', sans-serif;
     font-size: 14px;
     line-height: 16px;
