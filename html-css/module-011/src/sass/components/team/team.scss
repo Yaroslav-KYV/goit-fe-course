@@ -1,0 +1,59 @@
+.team {
+  position: relative;
+  padding: 96px 0 80px 0;
+}
+
+.team__item {
+  position: relative;
+  width: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.team__item--overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
+  background-image: -o-linear-gradient(left, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  background-image: linear-gradient(90deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  visibility: hidden;
+  -webkit-box-shadow: 10px 10px #95e1d3;
+  box-shadow: 10px 10px #95e1d3;
+  cursor: pointer;
+}
+
+.team__item:hover .team__item--overlay,
+.team__item:focus .team__item--overlay {
+  visibility: visible;
+}
+
+.team__item--image {
+  margin-bottom: 30px;
+}
+
+.team__text {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.name {
+  margin-bottom: 10px;
+}
+
+.position {
+  font-style: italic;
+  font-weight: 300;
+  cursor: pointer;
+
+}

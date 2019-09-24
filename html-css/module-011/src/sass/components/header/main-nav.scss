@@ -1,0 +1,13 @@
+.main-nav {
+  @include between-and-flex($type: 'hor')
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  padding-top: 25px;
+  margin-bottom: 156px;
+}
+
+.main-nav__page-navigation {
+  width: 620px;
+}

@@ -1,0 +1,45 @@
+.socials {
+  position: absolute;
+  width: 224px;
+  top: 206px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 20;
+
+}
+
+.socials__button {
+  position: relative;
+  float: left;
+  width: 55px;
+  height: 56px;
+  margin-right: 1px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #fce38a;
+  cursor: pointer;
+  border: none;
+
+  &:nth-last-child(1) {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #f38181;
+  }
+}
+
+.social__icon {
+  width: 32px;
+  height: 32px;
+  fill: #f38181;
+
+  &:hover {
+    fill: $main-white-color;
+  }
+}
+
+

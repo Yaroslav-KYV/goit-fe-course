@@ -1,0 +1,23 @@
+.services__icon--first::before {
+  @include bg-image($path: '../images/services/icon-alarm.svg');
+}
+
+.services__icon--second::before {
+  @include bg-image($path: '../images/services/icon-linegraph.svg');
+}
+
+.services__icon--third::before {
+  @include bg-image($path: '../images/services/icon-computer.svg');
+}
+
+.services__icon--fourth::before {
+  @include bg-image($path: '../images/services/icon-book.svg');
+}
+
+.services__icon--fifth::before {
+  @include bg-image($path: '../images/services/icon-home.svg');
+}
+
+.services__icon--sixth::before {
+  @include bg-image($path: '../images/services/icon-image.svg');
+}
