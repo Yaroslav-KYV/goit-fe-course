@@ -73,6 +73,6 @@ console.log(logins);
 
 addLogin(logins, "Ajax"); // 'Такой логин уже используется!'
 
-addLogin(logins, "Salvoray"); // 'Такой логин уже используется!'
+addLogin(logins, "Salvoray"); // 'Логин успешно добавлен!'
 
 console.log(logins);
