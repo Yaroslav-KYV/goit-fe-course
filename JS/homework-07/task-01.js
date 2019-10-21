@@ -159,15 +159,14 @@ const inputName = document.getElementById("name-input");
 
 const output = document.getElementById("name-output");
 
-inputName.addEventListener("input", outputChange);
-
-function outputChange(event) {
-  output.textContent = event.currentTarget.value;
-}
-
 if (inputName.value === "") {
   output.textContent = "newcomer";
-} // как вывести чтобы возвращалось постоянно?
+}
+
+inputName.addEventListener("input", e => {
+  output.textContent = e.target.value;
+  
+});
 
 /*
 =========================Task-06===============================
@@ -207,4 +206,3 @@ const textSize = document.getElementById("text");
 fontSizeCtrl.addEventListener("input", e => {
   textSize.style.fontSize = e.currentTarget.value + "px";
 });
-
