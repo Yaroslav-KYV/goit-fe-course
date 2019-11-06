@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webpack Starter Kit</title>
+  </head>
+
+  <body>
+    <form class="search-form" id="search-form">
+      <input type="text" name="city" placeholder="Enter city name..." />
+      <button type="submit">Get weather</button>
+    </form>
+
+    <section class="weather is-hidden" id="weather">
+      <h2>Current weather</h2>
+      <!-- <img class="icon" src="" alt="" /> -->
+
+      <p>Location: <span data-field="location">Харьков</span></p>
+      <p>Temperature: <span data-field="temp">20&#8451;</span></p>
+      <p>Humidity: <span data-field="humidity">65%</span></p>
+      <p>Wind: <span data-field="wind">3kph</span></p>
+      <p>Conditions: <span data-field="conditions">Sunny</span></p>
+    </section>
+
+    <a
+      class="credit"
+      href="https://darksky.net"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><img
+        src="https://darksky.net/dev/img/attribution/poweredby.png"
+        alt="darksky logo"
+        width="160"
+    /></a>
+  </body>
+</html>
