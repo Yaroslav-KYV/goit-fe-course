@@ -72,7 +72,7 @@ class CountdownTimer {
 const instanceTimer1 = new CountdownTimer("#timer-1", "Dec 31, 2019");
 instanceTimer1.timer();
 
-const instanceTimer2 = new CountdownTimer("#timer-2", "Nov 11, 2019");
+const instanceTimer2 = new CountdownTimer("#timer-2", "Nov 12, 2019");
 instanceTimer2.timer();
 
 // const instanceTimer3 = new CountdownTimer("#timer-3", "Aug 1, 2020");
